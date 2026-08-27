@@ -8,11 +8,11 @@ export function AboutSection({ preview = false }: { preview?: boolean }) {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-[1fr_1.25fr] gap-12 lg:gap-20">
         <div>
           <p className="font-mono text-accent text-sm mb-3">A little context</p>
-          <h2 className="text-3xl sm:text-4xl font-bold text-primary text-balance">Design-minded development with a human center.</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-primary text-balance">Learning by building, one project at a time.</h2>
         </div>
         <div className="flex flex-col gap-6 text-muted-foreground leading-relaxed">
-          <p>I&apos;m Alex, a developer and digital craftsperson based in Portland. I care about the space where useful technology meets thoughtful design.</p>
-          <p>I partner with ambitious teams to turn complex ideas into clear, fast, and quietly memorable products. When I&apos;m away from the keyboard, you&apos;ll find me photographing old buildings or making an unreasonable amount of coffee.</p>
+          <p>I&apos;m Mukesh Poojary, a computer science student and aspiring full-stack developer. I enjoy turning classroom concepts into useful, real-world projects.</p>
+          <p>I&apos;m currently building my skills in web development, problem solving, and product design through coursework, hackathons, and personal projects. When I&apos;m away from the keyboard, you&apos;ll find me learning something new or exploring ideas with fellow students.</p>
           {preview ? <Link href="/about" className="inline-flex items-center gap-2 text-accent font-semibold hover:underline">More about me <ArrowRight size={16} /></Link> : null}
         </div>
       </div>
@@ -53,17 +53,17 @@ export function ProjectCard({ project }: { project: (typeof projects)[number] })
 
 export function ContactForm() {
   return (
-    <form className="flex flex-col gap-6" action="mailto:alex@example.com" method="post" encType="text/plain">
+    <form className="flex flex-col gap-6" action="mailto:mukesh.poojary@example.com" method="post" encType="text/plain">
       <div className="grid sm:grid-cols-2 gap-6">
         <label className="flex flex-col gap-2"><span className="text-sm font-semibold text-primary">Name</span><input name="name" required className="h-12 rounded-lg border border-input bg-background px-4 outline-none focus:ring-2 focus:ring-ring" placeholder="Your name" /></label>
         <label className="flex flex-col gap-2"><span className="text-sm font-semibold text-primary">Email</span><input type="email" name="email" required className="h-12 rounded-lg border border-input bg-background px-4 outline-none focus:ring-2 focus:ring-ring" placeholder="you@example.com" /></label>
       </div>
-      <label className="flex flex-col gap-2"><span className="text-sm font-semibold text-primary">Message</span><textarea name="message" required rows={6} className="rounded-lg border border-input bg-background px-4 py-3 outline-none focus:ring-2 focus:ring-ring resize-y" placeholder="Tell me a little about your project..." /></label>
+      <label className="flex flex-col gap-2"><span className="text-sm font-semibold text-primary">Message</span><textarea name="message" required rows={6} className="rounded-lg border border-input bg-background px-4 py-3 outline-none focus:ring-2 focus:ring-ring resize-y" placeholder="Tell me about your idea, class project, or collaboration..." /></label>
       <button type="submit" className="inline-flex items-center justify-center gap-2 self-start rounded-lg bg-primary px-6 py-3 font-semibold text-primary-foreground hover:opacity-90 transition">Send message <ArrowRight size={17} /></button>
     </form>
   );
 }
 
 export function ContactDetails() {
-  return <div className="flex flex-col gap-5 text-muted-foreground"><a href="mailto:alex@example.com" className="inline-flex items-center gap-3 hover:text-accent"><Mail size={19} /> alex@example.com</a><span className="inline-flex items-center gap-3"><MapPin size={19} /> Portland, Oregon</span></div>;
+  return <div className="flex flex-col gap-5 text-muted-foreground"><a href="mailto:mukesh.poojary@example.com" className="inline-flex items-center gap-3 hover:text-accent"><Mail size={19} /> mukesh.poojary@example.com</a><span className="inline-flex items-center gap-3"><MapPin size={19} /> India</span></div>;
 }

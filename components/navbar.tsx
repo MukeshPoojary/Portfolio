@@ -20,7 +20,7 @@ export function Navbar() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="font-bold text-xl hover:opacity-80 transition">
-            Dev Portfolio
+            Mukesh Poojary
           </Link>
 
           {/* Desktop Menu */}
@@ -48,7 +48,7 @@ export function Navbar() {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden pb-4 space-y-2">
+          <div className="md:hidden pb-4 flex flex-col gap-2">
             {links.map(({ href, label }) => (
               <Link
                 key={href}
